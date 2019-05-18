@@ -21,6 +21,8 @@ Route::get('/index', 'Site\RegistroController@index2')->name('index');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/registro', 'site\RegistroController@index')->name('registro');
+Route::get('/registro', 'Site\RegistroController@index')->name('registro');
 
-Route::get('/logout', 'site\RegistroController@logout')->name('sair');
+Route::get('/logout', 'Site\RegistroController@logout')->name('sair');
+
+Route::get('/reset', 'Site\RegistroController@reset')->name('reset.password.form');

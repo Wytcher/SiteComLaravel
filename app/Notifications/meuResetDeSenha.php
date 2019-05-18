@@ -43,7 +43,7 @@ class meuResetDeSenha extends Notification
         return (new MailMessage)
                     ->subject('Reset senha')
                     ->line('Você está recebendo este email pois nós recebemos uma requisição de reset de senha.')
-                    ->action('REDEFINIR SENHA', route('home'))
+                    ->action('REDEFINIR SENHA', route('password.reset', $this->token))
                     ->line('Não responda a este email');
     }
 

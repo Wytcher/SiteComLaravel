@@ -20,4 +20,8 @@ class RegistroController extends Controller
     	Auth::logout();
     	return redirect()->route('index');
     }
+
+    public function reset(){
+        return view('auth.passwords.reset');
+    }
 }

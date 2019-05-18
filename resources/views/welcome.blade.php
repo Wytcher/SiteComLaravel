@@ -31,7 +31,7 @@
           </div>
           <div class="row">
             <div class="col-6"><input type="checkbox" name="lembrar"><small>Lembrar de mim</small></div>
-            <div class="col-6"><small><a href="">Recuperar senha</a></small></div>
+            <div class="col-6"><small><a href="{{route('password.request')}}">Recuperar senha</a></small></div>
           </div>
           <button class="btn btn-lg btn-primary btn-block mt-2" type="submit" style="background-color: #87CEEB!important;">Entrar</button>
           <div class="container">
